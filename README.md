@@ -53,9 +53,9 @@ Response (200 OK)
 },
 {
 "_id": "651f3c21d4c7a8b2f0e67890",
-"name": "Laura Gómez",
-"email": "laura@example.com",
-"age": 28
+"name": "Paula Morales",
+"email": "paula@example.com",
+"age": 27
 }
 ]
 
@@ -102,6 +102,18 @@ Response (200 OK)
 "message": "Usuario eliminado correctamente"
 }
 
+🐳 Ejecución con Docker
+
+Este proyecto también está preparado para ejecutarse en Docker.
+
+## PARA CREAR IMAGEN
+
+docker build -t gestion-usuarios .
+
+## PARA EJECUTAR EL CONTENEDOR
+
+docker run -p 3000:3000 --env-file .env gestion-usuarios
+
 📖 Reflexión: ¿Qué aprendí y qué mejoraría?
 ✅ Aprendí:
 
@@ -112,6 +124,8 @@ Response (200 OK)
 . El uso de Postman para probar y validar los endpoints creados.
 
 . La necesidad de manejar correctamente los códigos de estado HTTP y devolver mensajes claros en las respuestas.
+
+. También integré Docker para facilitar la portabilidad y despliegue del proyecto en cualquier entorno.
 
 🔧 Mejoras futuras:
 
